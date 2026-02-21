@@ -1,0 +1,74 @@
+{
+    "files.exclude": {
+        "**/.cache": false
+    },
+    "files.watcherExclude": {
+        "**/.cache/**": true
+    },
+    "extensions.ignoreRecommendations": true,
+
+    "launch": {
+        "configurations": [
+            {
+                "name": "Python: Current File",
+                "type": "python",
+                "request": "launch",
+                "program": "${file}",
+                "console": "integratedTerminal",
+                "stopAtEntry": true
+            }
+        ]
+    },
+
+    "git.openRepositoryInParentFolders": "never",
+    "python.createEnvironment.trigger": "off",
+    "security.workspace.trust.untrustedFiles": "open",
+    "vscodeGrok.model": "grok-3-fast",
+
+    "terminal.integrated.commandsToSkipShell": [
+        "order"
+    ],
+
+    // Use built-in dark base
+    "workbench.colorTheme": "Default Dark+",
+
+    // Background + foreground
+    "workbench.colorCustomizations": {
+        "editor.background": "#181818",
+        "editor.foreground": "#D4D4D4"
+    },
+
+    // Token colors from your theme JSON
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "comment",
+                "settings": { "foreground": "#4fbd88" }
+            },
+            {
+                "scope": "string",
+                "settings": { "foreground": "#4fbd88" }
+            },
+            {
+                "scope": "keyword",
+                "settings": { "foreground": "#66b5ff" }
+            },
+            {
+                "scope": "entity.name.tag",
+                "settings": { "foreground": "#66b5ff" }
+            },
+            {
+                "scope": "entity.other.attribute-name",
+                "settings": { "foreground": "#D7BA7D" }
+            },
+            {
+                "scope": "variable",
+                "settings": { "foreground": "#9CDCFE" }
+            },
+            {
+                "scope": "constant.numeric",
+                "settings": { "foreground": "#B5CEA8" }
+            }
+        ]
+    }
+}
